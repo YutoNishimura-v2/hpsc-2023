@@ -26,3 +26,6 @@
 	hipcc 12_hip.cpp
 13_bucket_sort: 13_bucket_sort.cpp
 	g++ 13_bucket_sort.cpp
+
+13_bucket_sort_gpu: 13_bucket_sort.cu
+	nvcc 13_bucket_sort.cu -arch=sm_60 -rdc=true
